@@ -55,16 +55,20 @@
     <Compile Include="PadroesCriacionais\FactoryMethod\Interface\IVeiculosFactory.cs" />
     <Compile Include="PadroesCriacionais\CreationFactory\Entidades\Cliente.cs" />
     <Compile Include="PadroesCriacionais\CreationFactory\Factories\ClienteFactory.cs" />
-    <Compile Include="PadroesCriacionais\CreationFactory\StaticCreationFactory.cs" />
     <Compile Include="PadroesEstruturais\Adapter\Adapter\AdaptadorMP3.cs" />
     <Compile Include="PadroesEstruturais\Adapter\Adapter\AdaptadorWMA.cs" />
     <Compile Include="PadroesEstruturais\Adapter\Entidades\PlayerMP3.cs" />
     <Compile Include="PadroesEstruturais\Adapter\Entidades\PlayerWMA.cs" />
     <Compile Include="PadroesEstruturais\Adapter\Interfaces\IPlayer.cs" />
-    <Compile Include="PadroesEstruturais\Proxy\Entidades\Cliente.cs" />
-    <Compile Include="PadroesEstruturais\Proxy\Entidades\Conta.cs" />
-    <Compile Include="PadroesEstruturais\Proxy\Entidades\Endereco.cs" />
-    <Compile Include="PadroesEstruturais\Proxy\Interfaces\IPessoa.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Logging Proxy\Proxys\ClienteServiceProxy.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Logging Proxy\Service\ClienteService.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Virtual Proxy\Entidades\Cliente.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Virtual Proxy\Entidades\Endereco.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Virtual Proxy\Interfaces\IPessoa.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Caching proxy\Proxys\EnderecoServiceProxy.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Caching proxy\Services\EnderecoService.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Caching proxy\Results\EnderecoResult.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Virtual Proxy\Proxys\ClienteProxy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,7 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PadroesComportamentais\" />
-    <Folder Include="PadroesEstruturais\Proxy\Proxy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

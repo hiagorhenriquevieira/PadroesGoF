@@ -1,8 +1,13 @@
 ﻿using System;
 
-public class Class1
+public class EnderecoService
 {
-	public Class1()
+	public EnderecoService()
 	{
 	}
+
+	public EnderecoResult ObterEnderecoAtravesDoCep(string cep)
+    {
+		return new EnderecoResult() { Cep = cep };
+    }
 }

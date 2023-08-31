@@ -1,8 +1,10 @@
 ﻿using System;
 
-public class Class1
+public class EnderecoResult
 {
-	public Class1()
+	public EnderecoResult()
 	{
 	}
+
+	public string Cep { get; set; }
 }
