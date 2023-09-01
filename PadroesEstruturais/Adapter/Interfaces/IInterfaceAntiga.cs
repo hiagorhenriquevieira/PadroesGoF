@@ -1,7 +1,7 @@
 ﻿namespace PadroesGoF.PadroesEstruturais.Adapter.Interfaces
 {
-    public interface IPlayer
+    interface IInterfaceAntiga
     {
-        void Play(string arquivo);
+        void MetodoAntigo();
     }
 }

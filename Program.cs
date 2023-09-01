@@ -7,6 +7,7 @@ using PadroesGoF.PadroesCriacionais.FactoryMethod.Interface;
 using PadroesGoF.PadroesEstruturais.Adapter.Adapter;
 using PadroesGoF.PadroesEstruturais.Adapter.Entidades;
 using PadroesGoF.PadroesEstruturais.Adapter.Interfaces;
+using System;
 
 namespace PadroesGoF
 {
@@ -69,21 +70,16 @@ namespace PadroesGoF
 
         private static void AplicarPadraoAdapter()
         {
-            // Reproduzindo arquivos usando os adaptadores
-            PlayerMP3 playerMP3 = new PlayerMP3();
-            IPlayer adaptadorMP3 = new AdaptadorMP3(playerMP3);
+            // Usando a classe nova diretamente
+            IInterfaceNova classeNova = new ClasseNova();
+            classeNova.MetodoNovo();
 
-            Reproduzir(adaptadorMP3, "musica.mp3");
+            Console.WriteLine();
 
-            PlayerWMA playerWMA = new PlayerWMA();
-            IPlayer adaptadorWMA = new AdaptadorWMA(playerWMA);
-
-            Reproduzir(adaptadorWMA, "musica.wma");
-        }
-
-        private static void Reproduzir(IPlayer player, string arquivo)
-        {
-            player.Play(arquivo);
+            // Usando o adaptador para utilizar a classe antiga através da interface nova
+            IInterfaceAntiga classeAntiga = new ClasseAntiga();
+            Adaptador adaptador = new Adaptador(classeAntiga);
+            adaptador.MetodoNovo();
         }
     }
 }

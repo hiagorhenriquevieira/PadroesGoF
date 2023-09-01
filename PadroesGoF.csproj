@@ -56,11 +56,11 @@
     <Compile Include="PadroesCriacionais\CreationFactory\Entidades\Cliente.cs" />
     <Compile Include="PadroesCriacionais\CreationFactory\Factories\ClienteFactory.cs" />
     <Compile Include="PadroesCriacionais\CreationFactory\StaticCreationFactory.cs" />
-    <Compile Include="PadroesEstruturais\Adapter\Adapter\AdaptadorMP3.cs" />
-    <Compile Include="PadroesEstruturais\Adapter\Adapter\AdaptadorWMA.cs" />
-    <Compile Include="PadroesEstruturais\Adapter\Entidades\PlayerMP3.cs" />
-    <Compile Include="PadroesEstruturais\Adapter\Entidades\PlayerWMA.cs" />
-    <Compile Include="PadroesEstruturais\Adapter\Interfaces\IPlayer.cs" />
+    <Compile Include="PadroesEstruturais\Adapter\Adapter\Adaptador.cs" />
+    <Compile Include="PadroesEstruturais\Adapter\Entidades\ClasseAntiga.cs" />
+    <Compile Include="PadroesEstruturais\Adapter\Entidades\ClasseNova.cs" />
+    <Compile Include="PadroesEstruturais\Adapter\Interfaces\IInterfaceAntiga.cs" />
+    <Compile Include="PadroesEstruturais\Adapter\Interfaces\IInterfaceNova.cs" />
     <Compile Include="PadroesEstruturais\Proxy\Entidades\Cliente.cs" />
     <Compile Include="PadroesEstruturais\Proxy\Entidades\Conta.cs" />
     <Compile Include="PadroesEstruturais\Proxy\Entidades\Endereco.cs" />
