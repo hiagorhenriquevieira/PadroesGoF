@@ -61,10 +61,15 @@
     <Compile Include="PadroesEstruturais\Adapter\Entidades\ClasseNova.cs" />
     <Compile Include="PadroesEstruturais\Adapter\Interfaces\IInterfaceAntiga.cs" />
     <Compile Include="PadroesEstruturais\Adapter\Interfaces\IInterfaceNova.cs" />
-    <Compile Include="PadroesEstruturais\Proxy\Entidades\Cliente.cs" />
-    <Compile Include="PadroesEstruturais\Proxy\Entidades\Conta.cs" />
-    <Compile Include="PadroesEstruturais\Proxy\Entidades\Endereco.cs" />
-    <Compile Include="PadroesEstruturais\Proxy\Interfaces\IPessoa.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\caching proxy\Proxys\EnderecoServiceProxy.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\caching proxy\Results\EnderecoResult.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\caching proxy\Services\EnderecoService.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Logging Proxy\Proxys\ClienteServiceProxy.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\Logging Proxy\Service\ClienteService.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\virtual proxy\Entidades\Cliente.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\virtual proxy\Entidades\Endereco.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\virtual proxy\Interfaces\IPessoa.cs" />
+    <Compile Include="PadroesEstruturais\Proxy\virtual proxy\Proxys\ClienteProxy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,6 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PadroesComportamentais\" />
+    <Folder Include="PadroesEstruturais\Proxy\caching proxy\Interface\" />
+    <Folder Include="PadroesEstruturais\Proxy\caching proxy\Proxy\" />
+    <Folder Include="PadroesEstruturais\Proxy\caching proxy\Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
